@@ -21,22 +21,18 @@
         type="text"
       />
 
-      <label>Description</label>
-      <input
+      <BaseInput
         v-model="event.description"
+        label="Description"
         type="text"
-        placeholder="Description"
-        class="field"
       />
 
       <h3>Where is your event?</h3>
 
-      <label>Location</label>
-      <input
+      <BaseInput
         v-model="event.location"
+        label="Location"
         type="text"
-        placeholder="Location"
-        class="field"
       />
 
       <h3>Are pets allowed?</h3>
