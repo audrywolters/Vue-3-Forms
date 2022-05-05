@@ -1,13 +1,11 @@
 <template>
-
   <label>{{ label }}</label>
-  <input 
-    v-model="event.title"
-    type="text"
-    placeholder="Title"
+  <input
+    :placeholder="label"
     class="field"
+    :value="modelValue"
+    @input="$emit('update:modelValue', $event.target.value)"
   >
-
 </template>
 
 <script>
@@ -15,6 +13,10 @@
     props: {
       label: {
         type: String,
+        default: ''
+      },
+      modelValue: {
+        type: [String, Number],
         default: ''
       }
     }
