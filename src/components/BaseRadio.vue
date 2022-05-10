@@ -22,7 +22,7 @@
     },
     value: {
       type: [String, Number],
-      requried: true
+      required: true
     }
   }
 </script>
